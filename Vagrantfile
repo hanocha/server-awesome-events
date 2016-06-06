@@ -81,6 +81,10 @@ Vagrant.configure(2) do |config|
     chef.add_recipe 'xml'
     chef.add_recipe 'ohai'
     chef.add_recipe 'nginx'
+    chef.add_recipe 'rails_book_cookbook::keys'
+    chef.add_recipe 'rails_book_cookbook::nginx_setting'
+    chef.add_recipe 'rails_book_cookbook::sqlite3_dev'
+    chef.add_recipe 'ruby'
 
     chef.json = {
       "ohai" => {
