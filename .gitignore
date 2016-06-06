@@ -3,3 +3,4 @@
 .bundle/
 .chef/
 .vagrant/
+.ssh/
