@@ -71,7 +71,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provision :chef_solo do |chef|
     config.omnibus.chef_version = :latest
-    chef.cookbooks_path = ["./cookbooks", "./site-cookbooks"]
+    chef.cookbooks_path = ["./berks-cookbooks", "./site-cookbooks"]
 
     chef.add_recipe 'build-essential'
     chef.add_recipe 'git'
@@ -86,6 +86,7 @@ Vagrant.configure(2) do |config|
     chef.add_recipe 'rails_book_cookbook::sqlite3_dev'
     chef.add_recipe 'ruby'
     chef.add_recipe 'ruby::bundle'
+    chef.add_recipe 'rails_book_cookbook::iptables'
 
     chef.json = {
       "ohai" => {
