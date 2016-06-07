@@ -1,7 +1,7 @@
 # Cookbook Name:: rails_book_cookbook
 # Recipe:: nginx_setting
 
-directory 'var/www/awesome-events' do
+directory '/var/www/awesome_events' do
   owner 'ops'
   action :create
   recursive true
