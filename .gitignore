@@ -1,5 +1,6 @@
 /vendor/bundle
 /cookbooks/
+/berks-cookbooks/
 .bundle/
 .chef/
 .vagrant/
