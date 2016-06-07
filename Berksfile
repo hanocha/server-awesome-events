@@ -8,3 +8,4 @@ cookbook 'database'
 cookbook 'xml'
 cookbook 'ohai'
 cookbook 'nginx'
+cookbook 'simple_iptables', git:"git://github.com/dcrosta/cookbook-simple-iptables.git"

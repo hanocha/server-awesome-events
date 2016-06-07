@@ -6,6 +6,9 @@ DEPENDENCIES
   nginx
   nodejs
   ohai
+  simple_iptables
+    git: git://github.com/dcrosta/cookbook-simple-iptables.git
+    revision: eae233d231ea189b44176efa2ba6584a21ef340d
   xml
 
 GRAPH
@@ -64,6 +67,7 @@ GRAPH
     packagecloud (>= 0.0.0)
   seven_zip (2.0.1)
     windows (>= 1.2.2)
+  simple_iptables (0.7.5)
   windows (1.43.0)
     chef_handler (>= 0.0.0)
   xml (2.0.0)
