@@ -4,7 +4,7 @@ server {
 
   access_log  /var/log/nginx/<%= node.rails_book_cookbook.server_name %>.access.log;
 
-  root   /var/www/awesome-events/current/public;
+  root   /var/www/awesome_events/current/public;
 
   location / {
     proxy_set_header  X-Real-IP $remote_addr;
